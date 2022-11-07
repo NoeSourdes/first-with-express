@@ -1,0 +1,23 @@
+{
+  "name": "first-with-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoeSourdes/first-with-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoeSourdes/first-with-express/issues"
+  },
+  "homepage": "https://github.com/NoeSourdes/first-with-express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
