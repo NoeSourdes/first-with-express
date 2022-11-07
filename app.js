@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, "routes")));
 app.get("/", (req, res) => {
   res.render("home", {
     title: "Home",
+    age: 30,
   });
 });
 app.get("/about", (req, res) => {
