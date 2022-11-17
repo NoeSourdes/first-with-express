@@ -28,12 +28,12 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/weather", (req, res) => {
+app.get("/jsonweather", (req, res) => {
   const { location } = req.query;
 
   weather(location, "m", (err, data) => {
     if (err) {
-      console.log(`Une erreur est survenu ${err}`);
+      alert("Votre localisation n'est pas correct");
     }
     res.send(data);
   });

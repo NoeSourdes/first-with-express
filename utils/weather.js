@@ -12,10 +12,12 @@ const weather = (location, unit, callback) => {
         );
       } else {
         const { location, current } = data;
-        callback(
-          undefined,
-          `La temperature à ${location.name}, est de ${current.temperature}°C et le resenti est de ${current.feelslike}°C`
-        );
+        callback(undefined, {
+          location: location.name,
+          temperature: current.temperature,
+          feelslike: current.feelslike,
+          logo: current.weather_icons[0],
+        });
       }
     });
 };
