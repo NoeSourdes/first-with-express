@@ -33,7 +33,7 @@ app.get("/jsonweather", (req, res) => {
 
   weather(location, "m", (err, data) => {
     if (err) {
-      alert("Votre localisation n'est pas correct");
+      console.log("la ville n'est pas existante");
     }
     res.send(data);
   });
@@ -44,7 +44,6 @@ app.get("/about", (req, res) => {
     title: "About",
   });
 });
-
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",

@@ -13,6 +13,7 @@ const weather = (location, unit, callback) => {
       } else {
         const { location, current } = data;
         callback(undefined, {
+          pays: location.country,
           location: location.name,
           temperature: current.temperature,
           feelslike: current.feelslike,

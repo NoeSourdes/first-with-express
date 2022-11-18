@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s all;
 }
 body .sectionLocation #enterLocation {
   height: 175px;
@@ -28,12 +29,14 @@ body .sectionLocation #enterLocation form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s all;
 }
 body .sectionLocation #enterLocation form label {
   color: #fff;
   font-size: 1.3em;
   padding: 15px;
   text-transform: uppercase;
+  transition: 0.3s all;
 }
 body .sectionLocation #enterLocation form input {
   padding: 5px 15px;
@@ -41,6 +44,7 @@ body .sectionLocation #enterLocation form input {
   outline: none;
   background: #fff;
   border: none;
+  transition: 0.3s all;
 }
 body .sectionLocation #enterLocation form button {
   margin-top: 20px;
@@ -52,6 +56,7 @@ body .sectionLocation #enterLocation form button {
   cursor: pointer;
   color: #fff;
   font-weight: bold;
+  transition: 0.3s all;
 }
 body .sectionLocation #weather {
   display: none;
@@ -65,28 +70,40 @@ body .sectionLocation #weather {
   justify-content: center;
   align-items: center;
   place-content: space-around;
+  transition: 0.3s all;
+}
+body .sectionLocation #weather #country {
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: 0.3s all;
 }
 body .sectionLocation #weather #Ville {
   font-size: 2.5em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
+  transition: 0.3s all;
 }
 body .sectionLocation #weather #logoWeather {
   border-radius: 6px;
   width: 70px;
+  transition: 0.3s all;
 }
 body .sectionLocation #weather #temperature {
   font-size: 2.5em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
+  transition: 0.3s all;
 }
 body .sectionLocation #weather #feelslike {
   font-size: 1.5em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
+  transition: 0.3s all;
 }
 
 @keyframes fondu {
