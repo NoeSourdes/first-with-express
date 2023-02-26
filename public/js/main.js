@@ -9,7 +9,9 @@ const blockWeather = document.getElementById("weather");
 const enterLocation = document.getElementById("enterLocation");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(`http://localhost:3000/jsonweather?location=${myLocation.value}`)
+  fetch(`http://localhost:3000/jsonweather?location=${myLocation.value}`, {
+    mode: "no-cors",
+  })
     .then((res) => res.json())
     .then((data) => {
       const { pays, location, temperature, feelslike, logo } = data;
